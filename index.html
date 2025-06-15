@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/png">
+    <title>Sala de Aula | Estacio</title>
+    <style>
+        /* Estilos CSS vão aqui */
+        body {
+            margin: 0; /* Remove a margem padrão do body */
+            padding: 0; /* Remove o padding padrão do body */
+            font-family: Arial, sans-serif; /* Define uma fonte padrão */
+            color: white; /* Cor do texto para contraste com a imagem */
+            height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+
+            /* Propriedades da imagem de fundo */
+            background-image: url('tela.jpg'); /* SUBSTITUA PELO CAMINHO DA SUA IMAGEM */
+            background-size: cover; /* Faz com que a imagem cubra todo o elemento */
+            background-position: center center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Evita que a imagem se repita */
+            background-attachment: fixed; /* Fixa a imagem ao viewport (opcional, para efeito paralaxe) */
+
+            /* Para garantir que o conteúdo fique visível e centralizado */
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            text-align: left;
+        }
+
+        .content {
+            
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 80%; /* Limita a largura do conteúdo em telas grandes */
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        /* Opcional: Estilos responsivos */
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+                margin: 15px; /* Adiciona uma margem para evitar que o conteúdo encoste nas bordas */
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p>window.onblur = null;</p>
+        <p>document.addEventListener('visibilitychange', function(e) { e.stopImmediatePropagation(); }, true);</p>
+    </div>
+</body>
+</html>
